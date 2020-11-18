@@ -1,0 +1,12 @@
+{
+  "name": "eBk",
+  "displayName": "eBk",
+  "expo": {
+    "name": "eBk",
+    "slug": "eBk",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
