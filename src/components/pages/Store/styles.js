@@ -12,10 +12,3 @@ export const TopText = styled.Text `
     font-size: 30px;
     margin-top: 50px;
 `;
-
-export const Container = styled.View `
-    height: 300px;
-    width: 350px; 
-    background-color: #F4F4F4;
-    margin-top: 50px;
-`;

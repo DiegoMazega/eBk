@@ -48,7 +48,7 @@ const StoreStack = createStackNavigator();
 function StoreStackScreen() {
   return (
     <StoreStack.Navigator>
-      <StoreStack.Screen name="Store" component={StoreScreen} options={{
+      <StoreStack.Screen name="Loja" component={StoreScreen} options={{
         headerTitleAlign: 'center',
         headerStyle:{
           backgroundColor: '#000000',
@@ -80,7 +80,7 @@ const FavoritesStack = createStackNavigator();
 function FavoritesStackScreen() {
   return (
     <FavoritesStack.Navigator >
-      <FavoritesStack.Screen name="Favorites" component={FavoritesScreen} options={{
+      <FavoritesStack.Screen name="Favoritos" component={FavoritesScreen} options={{
         headerTitleAlign: 'center',
         headerStyle:{
           backgroundColor: '#000000',
