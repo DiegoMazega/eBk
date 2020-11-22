@@ -1,12 +1,13 @@
 import React from 'react';
 import { Image, TouchableOpacity } from 'react-native';
-import {Container, ProductAsideImageContainer, ProductTextTitle, ProductTextSubTitle, ProductSubTitleContainer, ProductRatingContainer, ProductDownloadContainer, ProductDownloadText} from './style';
+import {Container, ProductAsideImageContainer, ProductTextTitle, ProductTextSubTitle, ProductSubTitleContainer, ProductRatingContainer, ProductDownloadContainer, ProductDownloadText} from './styles';
 import { AirbnbRating } from 'react-native-ratings';
 import { AntDesign } from '@expo/vector-icons'; 
 
-export default function Product({url, title, classification, age}){
+export default function Product({url, title, classification, age, navigation}){
     return(
-            <TouchableOpacity onPress={console.log(title)} underlayColor="white">
+            <TouchableOpacity onPress={() => navigation.navigate('Description', 
+            {url: url, title: title, classification: classification, age: age})}  underlayColor="white">
                 
                 <Container>
 
