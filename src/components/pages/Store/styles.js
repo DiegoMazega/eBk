@@ -10,5 +10,5 @@ export const TopText = styled.Text `
     color: #f9c059;
     text-align: center;
     font-size: 30px;
-    margin-top: 50px;
+    margin-top: 10px;
 `;
