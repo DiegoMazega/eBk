@@ -42,6 +42,7 @@ export function HomeStackScreen() {
       }}/>
       <HomeStack.Screen name="Store" component={StoreScreen} options={{
         headerTitleAlign: 'center',
+        title:'Loja',
         animationEnabled: true,
         headerStyle:{
           backgroundColor: '#000000',
@@ -52,7 +53,20 @@ export function HomeStackScreen() {
         },
         headerTintColor: '#FFFFFF'
       }}/>
-    </HomeStack.Navigator>
+      <HomeStack.Screen name="Description" component={DescriptionScreen} options={{
+        headerTitleAlign: 'center',
+        title:'Descrição',
+        animationEnabled: true,
+        headerStyle:{
+          backgroundColor: '#000000',
+        },
+        transitionSpec: {
+          open: config,
+          close: config,
+        },
+        headerTintColor: '#FFFFFF'
+      }}/>
+          </HomeStack.Navigator>
   );
 }
 
@@ -61,6 +75,7 @@ export function DescriptionStackScreen() {
       <DescriptionStack.Navigator>
         <DescriptionStack.Screen name="Description" component={DescriptionScreen} options={{
           headerTitleAlign: 'center',
+          title: 'Descrição',
           headerStyle:{
             backgroundColor: '#000000',
           },
@@ -90,6 +105,7 @@ export function StoreStackScreen() {
       }} />
       <StoreStack.Screen name="Description" component={DescriptionScreen} options={{
           headerTitleAlign: 'center',
+          title: 'Descrição',
           title: 'Loja',
           headerStyle:{
             backgroundColor: '#000000',
@@ -120,6 +136,19 @@ export function DownloadStackScreen() {
       }}/>
       <DownloadStack.Screen name="Store" component={StoreScreen} options={{
         headerTitleAlign: 'center',
+        title: 'Loja',
+        headerStyle:{
+          backgroundColor: '#000000',
+        },
+        transitionSpec: {
+          open: config,
+          close: config,
+        },
+        headerTintColor: '#FFFFFF'
+      }}/>
+      <DownloadStack.Screen name="Description" component={DescriptionScreen} options={{
+        headerTitleAlign: 'center',
+        title: 'Descrição',
         headerStyle:{
           backgroundColor: '#000000',
         },
@@ -149,6 +178,19 @@ export function FavoritesStackScreen() {
       }}/>
       <FavoritesStack.Screen name="Store" component={StoreScreen} options={{
         headerTitleAlign: 'center',
+        title: 'Loja',
+        headerStyle:{
+          backgroundColor: '#000000',
+        },
+        transitionSpec: {
+          open: config,
+          close: config,
+        },
+        headerTintColor: '#FFFFFF'
+      }}/>
+       <FavoritesStack.Screen name="Description" component={DescriptionScreen} options={{
+        headerTitleAlign: 'center',
+        title: 'Descrição',
         headerStyle:{
           backgroundColor: '#000000',
         },
