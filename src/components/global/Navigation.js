@@ -45,7 +45,7 @@ export default function Navigation() {
         },
       }}
       backBehavior="history"
-      initialRouteName = "Store"
+      initialRouteName = "Home"
     >
       <Tab.Screen name="Home" component={HomeStackScreen} options={{
         title: 'Inicio',

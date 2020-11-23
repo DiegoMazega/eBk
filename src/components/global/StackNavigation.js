@@ -40,13 +40,25 @@ export function HomeStackScreen() {
         },
         headerTintColor: '#FFFFFF'
       }}/>
+      <HomeStack.Screen name="Store" component={StoreScreen} options={{
+        headerTitleAlign: 'center',
+        animationEnabled: true,
+        headerStyle:{
+          backgroundColor: '#000000',
+        },
+        transitionSpec: {
+          open: config,
+          close: config,
+        },
+        headerTintColor: '#FFFFFF'
+      }}/>
     </HomeStack.Navigator>
   );
 }
 
 export function DescriptionStackScreen() {
     return (
-      <DescriptionStack.Navigator >
+      <DescriptionStack.Navigator>
         <DescriptionStack.Screen name="Description" component={DescriptionScreen} options={{
           headerTitleAlign: 'center',
           headerStyle:{
@@ -106,6 +118,17 @@ export function DownloadStackScreen() {
         },
         headerTintColor: '#FFFFFF'
       }}/>
+      <DownloadStack.Screen name="Store" component={StoreScreen} options={{
+        headerTitleAlign: 'center',
+        headerStyle:{
+          backgroundColor: '#000000',
+        },
+        transitionSpec: {
+          open: config,
+          close: config,
+        },
+        headerTintColor: '#FFFFFF'
+      }}/>
     </DownloadStack.Navigator>
   );
 }
@@ -114,6 +137,17 @@ export function FavoritesStackScreen() {
   return (
     <FavoritesStack.Navigator >
       <FavoritesStack.Screen name="Favoritos" component={FavoritesScreen} options={{
+        headerTitleAlign: 'center',
+        headerStyle:{
+          backgroundColor: '#000000',
+        },
+        transitionSpec: {
+          open: config,
+          close: config,
+        },
+        headerTintColor: '#FFFFFF'
+      }}/>
+      <FavoritesStack.Screen name="Store" component={StoreScreen} options={{
         headerTitleAlign: 'center',
         headerStyle:{
           backgroundColor: '#000000',
