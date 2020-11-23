@@ -58,7 +58,7 @@ export default function Navigation() {
       }}/>
       <Tab.Screen name="Download" component={DownloadStackScreen} options={{
         title: 'Download',
-        tabBarAccessibilityLabel: 'true' 
+        tabBarAccessibilityLabel: 'true', 
       }}/>
     </Tab.Navigator>
   );

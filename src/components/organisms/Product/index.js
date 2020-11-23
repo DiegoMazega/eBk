@@ -2,12 +2,15 @@ import React from 'react';
 import { Image, TouchableOpacity } from 'react-native';
 import {Container, ProductAsideImageContainer, ProductTextTitle, ProductTextSubTitle, ProductSubTitleContainer, ProductRatingContainer, ProductDownloadContainer, ProductDownloadText} from './styles';
 import { AirbnbRating } from 'react-native-ratings';
-import { AntDesign } from '@expo/vector-icons'; 
+import { AntDesign as Icon } from '@expo/vector-icons'; 
 
-export default function Product({url, title, classification, age, navigation}){
+export default function Product({url, title, classification, age, author, origin, originalTitle, description, price, navigation}){
     return(
             <TouchableOpacity onPress={() => navigation.navigate('Description', 
-            {url: url, title: title, classification: classification, age: age})}  underlayColor="white">
+            {url: url, title: title, classification: classification,
+                author: author, origin: origin, originalTitle: originalTitle,
+                description: description, price: price
+            })}  underlayColor="white">
                 
                 <Container>
 
@@ -38,7 +41,7 @@ export default function Product({url, title, classification, age, navigation}){
                             </ProductRatingContainer>
 
                             <ProductDownloadContainer>
-                                <AntDesign name="download" size={15} color="#FFF" style={
+                                <Icon name="download" size={15} color="#000" style={
                                     {
                                         alignSelf: "center"
                                     }

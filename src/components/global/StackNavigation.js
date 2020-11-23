@@ -10,11 +10,11 @@ const config = {
     animation: 'spring',
     config: {
         stiffness: 1000,
-        damping: 500,
+        damping: 5000,
         mass: 3,
         overshootClamping: true,
-        restDisplacementThreshold: 0.01,
-        restSpeedThreshold: 0.01,
+        restDisplacementThreshold: 0.1,
+        restSpeedThreshold: 0.1,
     },
 };
 
@@ -27,9 +27,10 @@ const DescriptionStack = createStackNavigator();
 
 export function HomeStackScreen() {
   return (
-    <HomeStack.Navigator >
+    <HomeStack.Navigator>
       <HomeStack.Screen name="Home" component={HomeScreen} options={{
         headerTitleAlign: 'center',
+        animationEnabled: true,
         headerStyle:{
           backgroundColor: '#000000',
         },
@@ -45,8 +46,8 @@ export function HomeStackScreen() {
 
 export function DescriptionStackScreen() {
     return (
-      <HomeStack.Navigator >
-        <HomeStack.Screen name="Description" component={DescriptionScreen} options={{
+      <DescriptionStack.Navigator >
+        <DescriptionStack.Screen name="Description" component={DescriptionScreen} options={{
           headerTitleAlign: 'center',
           headerStyle:{
             backgroundColor: '#000000',
@@ -57,7 +58,7 @@ export function DescriptionStackScreen() {
           },
           headerTintColor: '#FFFFFF'
         }}/>
-      </HomeStack.Navigator>
+      </DescriptionStack.Navigator>
     );
   }
 
@@ -75,7 +76,7 @@ export function StoreStackScreen() {
         },
         headerTintColor: '#FFFFFF'
       }} />
-      <HomeStack.Screen name="Description" component={DescriptionScreen} options={{
+      <StoreStack.Screen name="Description" component={DescriptionScreen} options={{
           headerTitleAlign: 'center',
           title: 'Loja',
           headerStyle:{

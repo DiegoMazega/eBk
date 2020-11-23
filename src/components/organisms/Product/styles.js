@@ -45,11 +45,11 @@ export const ProductDownloadContainer = styled.View `
   border-style: solid;
   border-radius: 10px;
   max-width: 190px;
-  justify-content: space-around;
+  justify-content: center;
 `;
 
 export const ProductDownloadText = styled.Text `
   color: #F6BD56;
   font-size: 10px;
-  margin-left: 1px;
+  margin-left: 10px;
 `;
