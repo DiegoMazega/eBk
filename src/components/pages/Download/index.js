@@ -9,7 +9,7 @@ export default function Download({navigation}){
         <Container>
             <Icon name="download" size={100} color="#F6BD56" />
             <Text>Você Ainda não Possui Nenhum Livro Baixado :'(</Text>
-            <Text>Que Tal ir na Nossa Loja Para Começar a Leitura?!</Text>
+            <Text>Que Tal ir a Nossa Loja Para Começar a Leitura?!</Text>
             <Button title='Ao Infinito e Além :D'
                 color="#F6BD56"
                 onPress={()=> navigation.navigate('Store')}
